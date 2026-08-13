@@ -10,6 +10,7 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
     chrome.storage.local
       .set({ pendingImport: { ...message.payload, savedAt: new Date().toISOString() } })
       .then(() => {
+        // Open NotebookLM and then also try to open existing source page
         return chrome.tabs.create({ url: "https://notebooklm.google.com/" });
       })
       .then(() => sendResponse({ ok: true }))

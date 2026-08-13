@@ -104,6 +104,7 @@ select:disabled, input:disabled { opacity: 0.5; }
 }
 .select-row select { flex: 1; }
 
+/* Token row */
 .token-row {
   display: flex;
   gap: 6px;
