@@ -1,0 +1,2 @@
+# discord-to-notebooklm
+Discordのチャット履歴をNotebookLMにインポートするChrome拡張。Discord APIトークン入力でサーバー・チャンネル一覧取得、メッセージエクスポート、NotebookLMへ自動インポート。
